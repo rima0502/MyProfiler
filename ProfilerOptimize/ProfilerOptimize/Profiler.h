@@ -2,7 +2,19 @@
 #include <string>
 #include <chrono>
 #include <list>
-
+/**********************/
+// 사용방법
+// 추적하고자 하는 범위 처음에 DEBUG_PROFILER_START(__FUNCTION_NAME__);
+// 끝에 DEBUG_PROFILER_END;
+// 
+// 주의
+// 메모리 누수 방지를 위해 마지막에
+// DEBUG_PROFILER_DUMP;
+// DEBUG_PROFILER_DELETE;
+// 해줘야함
+//
+// main.cpp에 예시파일 올려놓음
+/**********************/
 namespace MyProfiler
 {
 	class Block
